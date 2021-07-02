@@ -66,7 +66,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Username</label>
-        <input type="text" class="form-control" name="email" id="email" value=<?php echo $_SESSION["username"]; ?> aria-describedby="emailHelp" required>
+        <input type="text" class="form-control" name="email" id="email" onchange="emailValidation()" value=<?php echo $_SESSION["username"]; ?> aria-describedby="emailHelp" required>
         <div id="help" class="form-text">Username should be your emailID. We'll never share your email with anyone else.</div>
     </div>
 
@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </div> -->
     <div class="mb-3">
         <label for="age1" class="form-label">Age</label>
-        <input type="number" class="form-control" name="age" id="age" value=<?php if(!isset($newAge)) { echo $currAge; } else { echo $newAge; } ?> required>
+        <input type="number" class="form-control" name="age" id="age" onchange="ageValidation()" value=<?php if(!isset($newAge)) { echo $currAge; } else { echo $newAge; } ?> required>
         <div id="help" class="form-text">Minimum age to join BlogDott is 10.</div>
     </div>
     <!-- <div class="mb-3 form-check">
