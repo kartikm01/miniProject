@@ -39,8 +39,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["username"] = $newUsername;
             $_SESSION["name"] = $newName;
             echo '<div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">SUCCESS!</h4>
-                <p>Your details have been updated successfully.</div>';
+                  <h4 class="alert-heading">SUCCESS!</h4>
+                  <p>Your details have been updated successfully.</div>';
         } else {
             // Username is not unique.  
             echo '<div style="text-align:left">
