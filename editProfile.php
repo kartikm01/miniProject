@@ -92,6 +92,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="mt-4" style="text-align:center">
         <button type="submit" class="btn btn-primary">Update</button>
     </div>
+
+    <div class="mt-4" style="text-align:center"><h5><a href="#">Change Password</a></h5></div>
+
     </form>
 </div>
 
